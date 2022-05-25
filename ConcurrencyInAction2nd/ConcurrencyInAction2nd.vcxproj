@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2c90f6ac-eb3e-419d-a3bd-473b8371af5c}</ProjectGuid>
+    <RootNamespace>ConcurrencyInAction2nd</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Ch5\5_1_implementation_of_a_spinlock_mutex_using_std_atomic_flag.cpp" />
+    <ClCompile Include="concurrency_in_action_2nd.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ch2\2_1_a_function_that_returns_while_a_thread_still_has_access_to_local_variables.h" />
+    <ClInclude Include="Ch2\2_3_yuing_RAII_to_wait_for_a_thread_to_complte.h" />
+    <ClInclude Include="Ch2\2_7_a_joining_thread_class.h" />
+    <ClInclude Include="Ch2\2_9_parallel_version_off_std_accummulate.h" />
+    <ClInclude Include="Ch3\3_13_protecting_a_data_structure_with_std_shared_mutex.h" />
+    <ClInclude Include="Ch3\3_8_hierarchical_mutex.h" />
+    <ClInclude Include="Ch4\4_11_waiting_for_a_condition_variable_with_a_timeout.h" />
+    <ClInclude Include="Ch4\4_12_a_sequential_implementation_of_quicksort.h" />
+    <ClInclude Include="Ch4\4_13_parallel_quicksort_using_futures.h" />
+    <ClInclude Include="Ch4\4_14_a_sample_implementation_of_spawn_task.h" />
+    <ClInclude Include="Ch4\4_1_waiting_for_data_to_process_with_std_condition_variable.h" />
+    <ClInclude Include="Ch4\4_26_using_std_experimental_barrier.h" />
+    <ClInclude Include="Ch4\4_5_tread_safe_queue_using_condition_variables.h" />
+    <ClInclude Include="Ch4\4_7_passing_arguments_to_a_function_whis_std_async.h" />
+    <ClInclude Include="Ch4\4_X_std_promise_test.h" />
+    <ClInclude Include="Ch5\5_4_sequential_consistency_implies_a_total_ordering.h" />
+    <ClInclude Include="Ch5\5_6_relaxed_operations_on_multiple_threads.h" />
+    <ClInclude Include="Ch5\5_9_transitive_synchronization_using_acquire_and_release_ordering.h" />
+    <ClInclude Include="Ch6\6_11_a_thread_safe_lookup_table.h" />
+    <ClInclude Include="Ch6\6_12_obtaining_contents_of_a_threadsafe_lookup_table_as_std_map.h" />
+    <ClInclude Include="Ch6\6_13_a_thread_safe_list_with_iteration_support.h" />
+    <ClInclude Include="Ch6\6_1_a_class_definition_for_a_thread_safe_stack.h" />
+    <ClInclude Include="Ch6\6_2_the_full_class_for_a_thread_safe_queue_using_condition_variables.h" />
+    <ClInclude Include="Ch6\6_3_a_thread_safe_queue_holding_std_shared_ptr_instances.h" />
+    <ClInclude Include="Ch6\6_4_a_simple_single_threaded_queue_implementation.h" />
+    <ClInclude Include="Ch6\6_5_a_simple_queue_with_a_dummy_node.h" />
+    <ClInclude Include="Ch6\6_6_a_thread_safe_queue_with_fine_grained_locking.h" />
+    <ClInclude Include="Ch6\7_4_Reclaiming_nodes_when_no_threads_are_in_pop.h" />
+    <ClInclude Include="Ch6\7_5_the_referrence_counted_reclamation_machinery.h" />
+    <ClInclude Include="Ch6\7_6_an_implementation_of_pop_using_hazard_pointers.h" />
+    <ClInclude Include="Ch6\7_7_A_simple_implementation_of_get_hazard_pointer_for_current_thread.h" />
+    <ClInclude Include="Ch7\7_2_Implementing_push()_without_locks.h" />
+    <ClInclude Include="Ch7\7_3_A_lock_free_stack_leaks_nodes.h" />
+    <ClInclude Include="Ch7\7_8_A_simple_implementation_of_the_reclaim_functions.h" />
+    <ClInclude Include="head.h" />
+    <ClInclude Include="PrintTen.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

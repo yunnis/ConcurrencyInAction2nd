@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Ch2">
+      <UniqueIdentifier>{23e0936c-caa5-4cf0-bebb-bc4f5df1bb22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ch3">
+      <UniqueIdentifier>{cdfdef84-e00b-4f68-8336-463247f01987}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ch4">
+      <UniqueIdentifier>{2ceb9453-d9e6-40d3-899c-f8813b87f8db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ch5">
+      <UniqueIdentifier>{e35b4f06-d755-47fe-aaed-1b44bf197831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ch6">
+      <UniqueIdentifier>{87be341c-7872-4c4e-a4f6-da62f12cb962}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ch7">
+      <UniqueIdentifier>{6231d875-9efc-4bd5-90dd-ba3ada9e6d5a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="concurrency_in_action_2nd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Ch5\5_1_implementation_of_a_spinlock_mutex_using_std_atomic_flag.cpp">
+      <Filter>Ch5</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="head.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch2\2_3_yuing_RAII_to_wait_for_a_thread_to_complte.h">
+      <Filter>Ch2</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch2\2_1_a_function_that_returns_while_a_thread_still_has_access_to_local_variables.h">
+      <Filter>Ch2</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch2\2_7_a_joining_thread_class.h">
+      <Filter>Ch2</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch2\2_9_parallel_version_off_std_accummulate.h">
+      <Filter>Ch2</Filter>
+    </ClInclude>
+    <ClInclude Include="PrintTen.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch3\3_8_hierarchical_mutex.h">
+      <Filter>Ch3</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch3\3_13_protecting_a_data_structure_with_std_shared_mutex.h">
+      <Filter>Ch3</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch4\4_1_waiting_for_data_to_process_with_std_condition_variable.h">
+      <Filter>Ch4</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch4\4_5_tread_safe_queue_using_condition_variables.h">
+      <Filter>Ch4</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch4\4_7_passing_arguments_to_a_function_whis_std_async.h">
+      <Filter>Ch4</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch4\4_X_std_promise_test.h">
+      <Filter>Ch4</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch4\4_11_waiting_for_a_condition_variable_with_a_timeout.h">
+      <Filter>Ch4</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch4\4_12_a_sequential_implementation_of_quicksort.h">
+      <Filter>Ch4</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch4\4_13_parallel_quicksort_using_futures.h">
+      <Filter>Ch4</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch4\4_14_a_sample_implementation_of_spawn_task.h">
+      <Filter>Ch4</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch4\4_26_using_std_experimental_barrier.h">
+      <Filter>Ch4</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch5\5_4_sequential_consistency_implies_a_total_ordering.h">
+      <Filter>Ch5</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch5\5_6_relaxed_operations_on_multiple_threads.h">
+      <Filter>Ch5</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch5\5_9_transitive_synchronization_using_acquire_and_release_ordering.h">
+      <Filter>Ch5</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch6\6_1_a_class_definition_for_a_thread_safe_stack.h">
+      <Filter>Ch6</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch6\6_2_the_full_class_for_a_thread_safe_queue_using_condition_variables.h">
+      <Filter>Ch6</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch6\6_3_a_thread_safe_queue_holding_std_shared_ptr_instances.h">
+      <Filter>Ch6</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch6\6_4_a_simple_single_threaded_queue_implementation.h">
+      <Filter>Ch6</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch6\6_5_a_simple_queue_with_a_dummy_node.h">
+      <Filter>Ch6</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch6\6_6_a_thread_safe_queue_with_fine_grained_locking.h">
+      <Filter>Ch6</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch6\6_11_a_thread_safe_lookup_table.h">
+      <Filter>Ch6</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch6\6_12_obtaining_contents_of_a_threadsafe_lookup_table_as_std_map.h">
+      <Filter>Ch6</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch6\6_13_a_thread_safe_list_with_iteration_support.h">
+      <Filter>Ch6</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch7\7_2_Implementing_push()_without_locks.h">
+      <Filter>Ch7</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch7\7_3_A_lock_free_stack_leaks_nodes.h">
+      <Filter>Ch7</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch6\7_4_Reclaiming_nodes_when_no_threads_are_in_pop.h">
+      <Filter>Ch7</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch6\7_5_the_referrence_counted_reclamation_machinery.h">
+      <Filter>Ch7</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch6\7_6_an_implementation_of_pop_using_hazard_pointers.h">
+      <Filter>Ch7</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch6\7_7_A_simple_implementation_of_get_hazard_pointer_for_current_thread.h">
+      <Filter>Ch7</Filter>
+    </ClInclude>
+    <ClInclude Include="Ch7\7_8_A_simple_implementation_of_the_reclaim_functions.h">
+      <Filter>Ch7</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
